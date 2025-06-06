@@ -39,8 +39,10 @@ Jei reikia testuoti API, galima naudoti Thunder Client.
 
 ## Frontend (React aplikacija):
 cd client
+
 npm install (jeigu neveikia, reikia ijungti powershell kaip administratorius ir parašyti (Set-ExecutionPolicy RemoteSigned), kaip paklaus Do you want to change the execution policy? spauskite Yes ir spauskite enter.
 ![image](https://github.com/user-attachments/assets/17e6cc1f-38a6-4e12-9639-5f8c65d3bf7e)
+
 npm start
 
 Naršyklėje atsidarys: http://localhost:3000
