@@ -1,0 +1,19 @@
+{
+  "name": "1-darbas-tinklalapis",
+  "version": "1.0.0",
+  "description": "Šis projektas yra skirtas skatinti savanorystę Lietuvoje. Tinklapyje pateikiama informacija apie savanorystės naudą, organizacijos istoriją, vykdomus projektus ir kontaktus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "leaflet": "^1.9.4",
+    "nodemon": "^3.1.10",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,193 @@
+/* Bendri stiliai */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kortelės stiliai */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Modal lango stiliai */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Žvaigždučių reitingų stiliai */
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.rating i {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.rating i.checked {
+    color: #ffc107;
+    animation: pop 0.3s ease;
+}
+
+.rating i:hover,
+.rating i:hover ~ i {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+.rating i:active {
+    transform: scale(1.3);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Atsiliepimų forma */
+.reviews-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.review-form button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color: #004d40;
+}
+
+/* Atsiliepimų sąrašas */
+.review-list {
+    margin-top: 2rem;
+}
+
+.review-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+/* Responsive dizainas */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .modal-body img {
+        width: 100%;
+        height: auto;
+    }
+
+    .reviews-section {
+        padding: 1rem;
+    }
+
+    .review-form input,
+    .review-form textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .review-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
