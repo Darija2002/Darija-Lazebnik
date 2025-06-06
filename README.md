@@ -1,52 +1,90 @@
-# Savanorystės tinklapis
+# 🎯 Savanorystės tinklapis
 
-## Apie projektą
-Šis projektas yra skirtas skatinti savanorystę Lietuvoje. Tinklapyje pateikiama informacija apie savanorystės naudą, organizacijos istoriją, vykdomus projektus ir kontaktus.
+## 📌 Apie projektą
+Šis projektas skirtas skatinti savanorystę Lietuvoje. Tinklapyje pateikiama informacija apie savanorystės naudą, organizacijos veiklą, vykdomus projektus bei suteikiama galimybė susisiekti per kontaktų formą.
 
-### Autorius
-- **Vardas Pavardė**: Darija Lazebnik
-- **El. paštas**: [darija.lazebnik@stud.vilniustech.lt]
+## 👤 Autorius
+- **Vardas, pavardė:** Darija Lazebnik  
+- **El. paštas:** [darija.lazebnik@stud.vilniustech.lt](mailto:darija.lazebnik@stud.vilniustech.lt)
 
-## Failų struktūra
-1 darbas tinklalapis
-├── client/                 # React frontend
+## 📁 Projekto struktūra
+
+```
+1 darbas tinklalapis/
+├── client/               # React frontend
 │   ├── src/
-│   │   ├── components/
-│   │   │   ├── Projects.js
-│   │   │   ├── Home.js
-│   │   │   └── ...
-│   ├── public/
+│   │   └── components/   # Projekto komponentai (Projects.js, Home.js ir kt.)
+│   └── public/
 │   └── package.json
-├── server.js              # Express backend
-├── database.db            # SQLite duomenų bazė
-├── .gitignore             # Git ignoravimo failas
-└── README.md              # Projekto aprašymas
+├── server.js             # Express backend
+├── database.db           # SQLite duomenų bazė
+├── .gitignore            # Git ignoruojami failai
+└── README.md             # Projekto aprašymas
+```
 
-## Būtini komponentai:
+## 🛠️ Reikalavimai
 
-Node.js: https://nodejs.org/ 
-Visual Studio Code
-VS Code plėtiniai:
-SQLite Viewer (SQLite Explorer arba SQLite Viewer by Alex Covizzi)
-Thunder Client (API testavimui - neprivaloma)
+- **Node.js:** [https://nodejs.org](https://nodejs.org)  
+- **Visual Studio Code**
 
-## Backend (serverio paleidimas):
-cd 1 darbas tinklalapis
+### 🔌 Rekomenduojami plėtiniai (VS Code):
+- `SQLite Viewer` (pvz., SQLite Viewer by Alex Covizzi)
+- `Thunder Client` *(API testavimui – neprivaloma)*
 
-node server.js (patirkinkite Visual studio code ar tikrai yra, parašykite komandą node -v, turėtu parodyti versiją. Jeigu tikrai buvo idiegtas, tai tiesiog išeikite iš Visual studio code ir iš naujo ijunkite jį.)
+---
 
-Serveris paleidžiama adresu: http://localhost:5000
-Jei reikia testuoti API, galima naudoti Thunder Client.
+## 🚀 Projekto paleidimas
 
-## Frontend (React aplikacija):
+### 1. Backend (Node.js + Express)
+
+
+cd "1 darbas tinklalapis"
+node server.js
+
+
+Jei komanda `node` neveikia, pasitikrinkite:
+
+node -v
+
+Jeigu versija nerodoma – `Node.js` reikia įdiegti iš naujo. Jei įdiegta, kartais padeda Visual Studio Code **perstartavimas**.
+
+**Serverio adresas:** [http://localhost:5000](http://localhost:5000)
+
+---
+
+### 2. Frontend (React)
+
+
 cd client
-
-npm install (jeigu neveikia, reikia ijungti powershell kaip administratorius ir parašyti (Set-ExecutionPolicy RemoteSigned), kaip paklaus Do you want to change the execution policy? spauskite Yes ir spauskite enter.
-![image](https://github.com/user-attachments/assets/17e6cc1f-38a6-4e12-9639-5f8c65d3bf7e)
-
+npm install
 npm start
 
-Naršyklėje atsidarys: http://localhost:3000
+
+Jei `npm install` neveikia dėl „script disabled“ klaidos, paleiskite PowerShell kaip administratorius ir įvykdykite:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+Kai paklaus **Do you want to change the execution policy?**, įveskite `Y` ir spauskite `Enter`.
+
+**Naršyklės adresas:** [http://localhost:3000](http://localhost:3000)
+
+---
 
 ## Projekto tikslas
-Šis projektas skirtas parodyti savanorystės naudą ir skatinti žmones prisijungti prie įvairių projektų, taip pat suteikti galimybę susisiekti su organizacija per kontaktų formą.
+
+- Supažindinti vartotoją su savanorystės idėja.
+- Skatinti prisijungti prie savanoriškų veiklų.
+- Leisti peržiūrėti aktyvius projektus.
+- Suteikti galimybę pateikti atsiliepimą arba norą tapti savanoriu per kontaktų formas.
+
+## Duomenų bazės atidarymas
+
+Norint paleisti `database.db` failą per Visual Studio Code:
+
+1. Įsitikinkite, kad yra įdiegtas plėtinys *SQLite Viewer* (pvz., SQLite Viewer by Alex Covizzi).
+2. Raskite projektų kataloge failą `database.db`.
+3. Dešiniu pelės klavišu spustelėkite ant `database.db` ir pasirinkite **"Open Database"** (arba "Open in SQLite Viewer").
+4. Atsidarys visos lentelės ir jų duomenys.
+
