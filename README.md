@@ -8,31 +8,42 @@
 - **El. paštas**: [darija.lazebnik@stud.vilniustech.lt]
 
 ## Failų struktūra
-- `index.html`: Pagrindinis puslapis su galerija ir savanorystės nauda.
-- `pages/about.html`: Informacija apie organizaciją, savanorystės naudą ir lentelė su projektais.
-- `pages/contact.html`: Kontaktų puslapis su forma, leidžiančia lankytojams pateikti užklausas.
-- `pages/team.html`: Komandos puslapis su narių kortelėmis ir papildoma informacija.
-- `css/styles.css`: Bendras stiliaus failas pirmo darbo puslapiams
-- `css/new-style` : Nauja css failas puslapiems
-- `images/`: Aplankas su paveikslėliais galerijai ir kitoms sekcijoms.
-- `js/scripts.js`: JavaScript failas su funkcionalumu
-- `README.md`: Projekto aprašymas.
+1 darbas tinklalapis
+├── client/                 # React frontend
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Projects.js
+│   │   │   ├── Home.js
+│   │   │   └── ...
+│   ├── public/
+│   └── package.json
+├── server.js              # Express backend
+├── database.db            # SQLite duomenų bazė
+├── .gitignore             # Git ignoravimo failas
+└── README.md              # Projekto aprašymas
 
-## Kaip paleisti projektą
-1. Atsisiųskite projektą.
-2. Atidarykite `index.html` failą naršyklėje.
-3. Naršykite puslapius per navigacijos juostą.
+## Būtini komponentai:
 
-## Papildomi elementai
-- **Galerija**: Galerija (`index.html`).
-- **Lentelė**: Lentelė su projekto pasiekimais (`about.html`).
-- **Forma**: Kontaktų forma su trimis laukeliais (`contact.html`).
-- **Komanda**: Komandos narių kortelės su papildoma informacija (`team.html`).
-- **Projektai**: Projektų kortelės (`projects.html`)
-- **Atsiliepimai**: Atsiliepimų forma (`projects.html`)
-- **Žemėlapis**: Savanorių centrų vietos (`team.html`)
+Node.js: https://nodejs.org/ 
+Visual Studio Code
+VS Code plėtiniai:
+SQLite Viewer (SQLite Explorer arba SQLite Viewer by Alex Covizzi)
+Thunder Client (API testavimui - neprivaloma)
 
+## Backend (serverio paleidimas):
+cd 1 darbas tinklalapis
+node server.js (patirkinkite Visual studio code ar tikrai yra, parašykite komandą node -v, turėtu parodyti versiją. Jeigu tikrai buvo idiegtas, tai tiesiog išeikite iš Visual studio code ir iš naujo ijunkite jį.)
 
+Serveris paleidžiama adresu: http://localhost:5000
+Jei reikia testuoti API, galima naudoti Thunder Client.
+
+## Frontend (React aplikacija):
+cd client
+npm install (jeigu neveikia, reikia ijungti powershell kaip administratorius ir parašyti (Set-ExecutionPolicy RemoteSigned), kaip paklaus Do you want to change the execution policy? spauskite Yes ir spauskite enter.
+![image](https://github.com/user-attachments/assets/17e6cc1f-38a6-4e12-9639-5f8c65d3bf7e)
+npm start
+
+Naršyklėje atsidarys: http://localhost:3000
 
 ## Projekto tikslas
 Šis projektas skirtas parodyti savanorystės naudą ir skatinti žmones prisijungti prie įvairių projektų, taip pat suteikti galimybę susisiekti su organizacija per kontaktų formą.
