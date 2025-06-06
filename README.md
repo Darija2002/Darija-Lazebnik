@@ -37,15 +37,15 @@
 
 ### 1. Backend (Node.js + Express)
 
-
+```bash
 cd "1 darbas tinklalapis"
 node server.js
+```
 
-
-Jei komanda `node` neveikia, pasitikrinkite:
-
+🔎 Jei komanda `node` neveikia, pasitikrinkite:
+```bash
 node -v
-
+```
 Jeigu versija nerodoma – `Node.js` reikia įdiegti iš naujo. Jei įdiegta, kartais padeda Visual Studio Code **perstartavimas**.
 
 **Serverio adresas:** [http://localhost:5000](http://localhost:5000)
@@ -54,13 +54,13 @@ Jeigu versija nerodoma – `Node.js` reikia įdiegti iš naujo. Jei įdiegta, ka
 
 ### 2. Frontend (React)
 
-
+```bash
 cd client
 npm install
 npm start
+```
 
-
-Jei `npm install` neveikia dėl „script disabled“ klaidos, paleiskite PowerShell kaip administratorius ir įvykdykite:
+🛑 Jei `npm install` neveikia dėl „script disabled“ klaidos, paleiskite PowerShell kaip administratorius ir įvykdykite:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -72,7 +72,7 @@ Kai paklaus **Do you want to change the execution policy?**, įveskite `Y` ir sp
 
 ---
 
-## Projekto tikslas
+## 🎯 Projekto tikslas
 
 - Supažindinti vartotoją su savanorystės idėja.
 - Skatinti prisijungti prie savanoriškų veiklų.
