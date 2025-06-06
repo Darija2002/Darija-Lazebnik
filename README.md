@@ -32,6 +32,7 @@ Thunder Client (API testavimui - neprivaloma)
 
 ## Backend (serverio paleidimas):
 cd 1 darbas tinklalapis
+
 node server.js (patirkinkite Visual studio code ar tikrai yra, parašykite komandą node -v, turėtu parodyti versiją. Jeigu tikrai buvo idiegtas, tai tiesiog išeikite iš Visual studio code ir iš naujo ijunkite jį.)
 
 Serveris paleidžiama adresu: http://localhost:5000
